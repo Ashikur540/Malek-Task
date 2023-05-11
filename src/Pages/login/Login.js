@@ -50,7 +50,7 @@ export const Login = () => {
                             </button>
 
                             <div class="mt-6 text-center">
-                                <a href="#" class="text-sm text-slate-300 hover:underline dark:text-blue-400">
+                                <a href="#" class="text-sm text-slate-300 hover:underline">
                                     Don’t have an account yet? Sign up
                                 </a>
                             </div>

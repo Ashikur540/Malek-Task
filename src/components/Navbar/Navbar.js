@@ -8,6 +8,7 @@ export const Navbar = () => {
         { url: '/about', name: 'About' },
         { url: '/products', name: 'Products' },
         { url: '/blogs', name: 'Blogs' },
+        { url: '/signup', name: 'Signup' },
     ]
     return (
         <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
