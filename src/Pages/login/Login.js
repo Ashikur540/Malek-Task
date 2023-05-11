@@ -1,8 +1,10 @@
+import loginImg from "../../Assets/Photos/Sign in image.png";
+
 export const Login = () => {
     return (
         <div className="relative">
             <img
-                src="https://cdn.pixabay.com/photo/2023/04/08/20/07/mimose-7910067_960_720.jpg"
+                src={loginImg}
                 className="absolute inset-0 object-cover w-full h-full"
                 alt=""
             />
@@ -26,22 +28,22 @@ export const Login = () => {
                         <form className="space-y-8">
                             <div>
                                 <label class="block mb-2 text-sm text-slate-300">Username or Email</label>
-                                <input type="email" placeholder="Enter your username or email" class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-transparent shadow-lg rounded-lg " />
+                                <input type="email" placeholder="Enter your username or email" class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-transparent rounded-lg " style={{ "box-shadow": "0px 4px 4px rgba(0, 0, 0, 0.28)" }} />
                             </div>
                             <div>
                                 <label class="block mb-2 text-sm text-slate-300">Password</label>
-                                <input type="password" placeholder="Enter your password" class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-transparent shadow-lg rounded-lg " />
+                                <input type="password" placeholder="Enter your password" class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-transparent  rounded-lg " style={{ "box-shadow": "0px 4px 4px rgba(0, 0, 0, 0.28)" }} />
                             </div>
 
                             <div className="flex justify-between text-slate-200">
                                 <div className="flex items-center">
-                                    <input type="checkbox" name="remember" id="remember" aria-label="Remember me" className="mr-1 rounded-sm focus:ring-violet-400 focus:dark:border-violet-400 focus:ring-2 accent-violet-400" />
-                                    <label for="remember" className="text-sm dark:text-gray-400">Remember me</label>
+                                    <input type="checkbox" name="remember" id="remember" aria-label="Remember me" className="mr-1 rounded-sm focus:ring-violet-400 " />
+                                    <label for="remember" className="text-sm ">Remember me</label>
                                 </div>
-                                <a className="text-sm dark:text-gray-400" href="/">Forgot your password?</a>
+                                <a className="text-sm " href="/">Forgot your password?</a>
                             </div>
 
-                            <button class="w-full mx-auto max-w-xs px-6 py-3 mt-4 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-800 rounded-lg hover:bg-blue-400 flex justify-between items-center gap-4">
+                            <button class="w-full mx-auto max-w-xs px-6 py-3 mt-4 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-[#002868] rounded-lg hover:bg-blue-900 flex justify-center items-center gap-8">
 
                                 <span>Sign in</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
@@ -67,7 +69,7 @@ export const Login = () => {
                             </svg>
                             <span>Continue with google</span>
                         </button>
-                        <button className="bg-blue-700 text-white font-medium py-2 px-5 flex justify-between items-center rounded-md gap-6">
+                        <button className="bg-[#002868] text-white font-medium py-2 px-5 flex justify-between items-center rounded-md gap-6">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-apple" viewBox="0 0 16 16">
                                 <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z" />
                                 <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z" />

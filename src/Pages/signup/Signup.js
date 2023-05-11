@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-
+import signupImg from "../../Assets/Photos/Sign up image.png";
 const Signup = () => {
 
     const [visible, setVisible] = useState(false)
@@ -11,8 +11,8 @@ const Signup = () => {
     return (
         <div className="relative">
             <img
-                src="https://cdn.pixabay.com/photo/2023/04/08/20/07/mimose-7910067_960_720.jpg"
-                className="absolute inset-0 object-cover w-full h-full"
+                src={signupImg}
+                className="absolute inset-0 object-cover w-full h-full "
                 alt=""
             />
             <div className="absolute bg-black opacity-60 inset-0 z-0"></div>
@@ -118,62 +118,62 @@ const Signup = () => {
                         <form className="space-y-4">
                             <div>
                                 <CustomeLabel name={"Username"} />
-                                <input type="text" placeholder="Enter your username or email" className="block w-full px-5 py-3 mt-2 text-slate-300 placeholder-gray-400 bg-transparent shadow-lg rounded-lg " required />
+                                <input type="text" placeholder="Enter your username or email" className="block w-full px-5 py-3 mt-2 text-slate-300 placeholder-gray-400 bg-transparent  rounded-lg " required style={{"box-shadow": "0px 4px 4px rgba(0, 0, 0, 0.28)"}}/>
                             </div>
                             <div>
                                 <CustomeLabel name={"Email"} />
-                                <input type="email" placeholder="Enter your username or email" className="block w-full px-5 py-3 mt-2 text-slate-300 placeholder-gray-400 bg-transparent shadow-lg rounded-lg " required />
+                                <input type="email" placeholder="Enter your username or email" className="block w-full px-5 py-3 mt-2 text-slate-300 placeholder-gray-400 bg-transparent shadow-lg rounded-lg " style={{"box-shadow": "0px 4px 4px rgba(0, 0, 0, 0.28)"}} />
                             </div>
 
                             <div>
                                 <CustomeLabel name={"First Name"} />
-                                <input type="text" placeholder="First Name" className="block w-full px-5 py-3 mt-2 text-slate-300 placeholder-gray-400 bg-transparent shadow-lg rounded-lg " />
+                                <input type="text" placeholder="First Name" className="block w-full px-5 py-3 mt-2 text-slate-300 placeholder-gray-400 bg-transparent shadow-lg rounded-lg " style={{"box-shadow": "0px 4px 4px rgba(0, 0, 0, 0.28)"}} />
                             </div>
                             <div>
                                 <CustomeLabel name={"Last Name"} />
-                                <input type="text" placeholder="Last Name" className="block w-full px-5 py-3 mt-2 text-slate-300 placeholder-gray-400 bg-transparent shadow-lg rounded-lg " />
+                                <input type="text" placeholder="Last Name" className="block w-full px-5 py-3 mt-2 text-slate-300 placeholder-gray-400 bg-transparent shadow-lg rounded-lg " style={{"box-shadow": "0px 4px 4px rgba(0, 0, 0, 0.28)"}}/>
                             </div>
 
                             <div>
                                 <CustomeLabel name={"Password"} />
-                                <input type="password" placeholder="password" className="block w-full px-5 py-3 mt-2 text-slate-300 placeholder-gray-400 bg-transparent shadow-lg rounded-lg " />
+                                <input type="password" placeholder="password" className="block w-full px-5 py-3 mt-2 text-slate-300 placeholder-gray-400 bg-transparent shadow-lg rounded-lg " style={{"box-shadow": "0px 4px 4px rgba(0, 0, 0, 0.28)"}}/>
                             </div>
 
                             <div>
                                 <CustomeLabel name={"Password Confirmation"} />
-                                <input type="password" placeholder="Confirm password" className="block w-full px-5 py-3 mt-2 text-slate-300 placeholder-gray-400 bg-transparent shadow-lg rounded-lg " />
+                                <input type="password" placeholder="Confirm password" className="block w-full px-5 py-3 mt-2 text-slate-300 placeholder-gray-400 bg-transparent shadow-lg rounded-lg " style={{"box-shadow": "0px 4px 4px rgba(0, 0, 0, 0.28)"}}/>
                             </div>
                             <div>
                                 <CustomeLabel name={"Cell phone Number"} />
-                                <input type="tel" placeholder="cell phone number" className="block w-full px-5 py-3 mt-2 text-slate-300 placeholder-gray-400 bg-transparent shadow-lg rounded-lg " />
+                                <input type="tel" placeholder="cell phone number" className="block w-full px-5 py-3 mt-2 text-slate-300 placeholder-gray-400 bg-transparent shadow-lg rounded-lg " style={{"box-shadow": "0px 4px 4px rgba(0, 0, 0, 0.28)"}}/>
                             </div>
                             <div>
                                 <CustomeLabel name={"Birth Month and Year"} />
-                                <input type="date" placeholder="Enter your password" className="block w-full px-5 py-3 mt-2 text-slate-300 placeholder-gray-400 bg-transparent shadow-lg rounded-lg " />
+                                <input type="date" placeholder="Enter your password" className="block w-full px-5 py-3 mt-2 text-slate-300 placeholder-gray-400 bg-transparent shadow-lg rounded-lg " style={{"box-shadow": "0px 4px 4px rgba(0, 0, 0, 0.28)"}}/>
                             </div>
                             <div>
                                 <CustomeLabel name={"State"} />
-                                <input type="text" placeholder="State" className="block w-full px-5 py-3 mt-2 text-slate-300 placeholder-gray-400 bg-transparent shadow-lg rounded-lg " />
+                                <input type="text" placeholder="State" className="block w-full px-5 py-3 mt-2 text-slate-300 placeholder-gray-400 bg-transparent shadow-lg rounded-lg " style={{"box-shadow": "0px 4px 4px rgba(0, 0, 0, 0.28)"}}/>
                             </div>
                             <div>
                                 <CustomeLabel name={"City"} />
-                                <input type="text" placeholder="State" className="block w-full px-5 py-3 mt-2 text-slate-300 placeholder-gray-400 bg-transparent shadow-lg rounded-lg " />
+                                <input type="text" placeholder="State" className="block w-full px-5 py-3 mt-2 text-slate-300 placeholder-gray-400 bg-transparent shadow-lg rounded-lg " style={{"box-shadow": "0px 4px 4px rgba(0, 0, 0, 0.28)"}}/>
                             </div>
                             <div>
                                 <CustomeLabel name={"Country"} />
-                                <input type="text" placeholder="Country" className="block w-full px-5 py-3 mt-2 text-slate-300 placeholder-gray-400 bg-transparent shadow-lg rounded-lg " />
+                                <input type="text" placeholder="Country" className="block w-full px-5 py-3 mt-2 text-slate-300 placeholder-gray-400 bg-transparent shadow-lg rounded-lg " style={{"box-shadow": "0px 4px 4px rgba(0, 0, 0, 0.28)"}}/>
                             </div>
                             <div>
                                 <CustomeLabel name={"Political Affiliation"} />
-                                <input type="text" placeholder="Democrate" className="block w-full px-5 py-3 mt-2 text-slate-300 placeholder-gray-400 bg-transparent shadow-lg rounded-lg " />
+                                <input type="text" placeholder="Democrate" className="block w-full px-5 py-3 mt-2 text-slate-300 placeholder-gray-400 bg-transparent shadow-lg rounded-lg " style={{"box-shadow": "0px 4px 4px rgba(0, 0, 0, 0.28)"}}/>
                             </div>
                             <div>
                                 <CustomeLabel name={"Number of National Elections voted in"} />
-                                <input type="text" placeholder="1" className="block w-full px-5 py-3 mt-2 text-slate-300 placeholder-gray-400 bg-transparent shadow-lg rounded-lg " />
+                                <input type="text" placeholder="1" className="block w-full px-5 py-3 mt-2 text-slate-300 placeholder-gray-400 bg-transparent shadow-lg rounded-lg " style={{"box-shadow": "0px 4px 4px rgba(0, 0, 0, 0.28)"}}/>
                             </div>
                             <div>
                                 <CustomeLabel name={"Number of State Elections voted in"} />
-                                <input type="text" placeholder="1" className="block w-full px-5 py-3 mt-2 text-slate-300 placeholder-gray-400 bg-transparent shadow-lg rounded-lg " />
+                                <input type="text" placeholder="1" className="block w-full px-5 py-3 mt-2 text-slate-300 placeholder-gray-400 bg-transparent shadow-lg rounded-lg " style={{"box-shadow": "0px 4px 4px rgba(0, 0, 0, 0.28)"}}/>
                             </div>
 
                             <div className="flex flex-col justify-start text-slate-300">
@@ -189,7 +189,7 @@ const Signup = () => {
                                 </p>
 
                             </div>
-                            <button className="w-full mx-auto max-w-xs px-6 py-3 mt-4 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-800 rounded-lg hover:bg-blue-400 flex justify-between items-center gap-4">
+                            <button className="w-full mx-auto max-w-xs px-6 py-4 mt-4 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-[#002868] rounded-lg hover:bg-blue-800 flex justify-center items-center gap-8">
 
                                 <span>Sign in</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-arrow-right-short" viewBox="0 0 16 16">
