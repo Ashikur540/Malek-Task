@@ -1,12 +1,13 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
-import { Navbar } from '../components/Navbar/Navbar'
+import { Nav } from '../components/Nav/Nav'
 
 
 const Main = () => {
     return (
         <div className='h-screen'>
-            <Navbar></Navbar>
+            {/* <Navbar></Navbar> */}
+            <Nav />
             <Outlet></Outlet>
         </div>
     )
