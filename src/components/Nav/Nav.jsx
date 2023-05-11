@@ -3,12 +3,13 @@ import { Link } from "react-router-dom";
 
 export const Nav = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);
     const allLinks = [
         { url: '/', name: 'Home' },
         { url: '/about', name: 'About' },
-        { url: '/products', name: 'Products' },
-        { url: '/blogs', name: 'Blogs' },
-        { url: '/signup', name: 'Signup' },
+        { url: '/Contact', name: 'Contact' },
+
+        { url: '/Partners', name: 'Partners' },
     ]
     return (
         <>
@@ -35,22 +36,65 @@ export const Nav = () => {
                                 GILI GILI
                             </span>
                         </a>
-                        <ul class="flex items-center hidden space-x-8 lg:flex">
+                        <ul class="flex items-center hidden space-x-8 lg:flex ">
                             {
                                 allLinks.map((link, i) => (
                                     <li key={i}>
                                         <Link
                                             to={link.url}
-                                            class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                                            class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-yellow-400"
                                         >
                                             {link.name}
                                         </Link>
                                     </li>
                                 ))
                             }
+                            <li className="group relative ">
+                                <Link
+
+                                    class=" font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-yellow-400"
+                                >
+                                    News
+                                </Link>
+
+
+                                <ul className="group-hover:block hidden absolute top-[100%] left-0 z-[999] bg-white  border space-y-3 py-4 rounded-md">
+                                    <li className=" hover:bg-slate-200">
+                                        <Link
+
+                                            class="px-8 py-4 font-medium tracking-wide text-slate-800 transition-colors duration-200 hover:text-yellow-400"
+                                        >
+                                            News
+                                        </Link>
+                                    </li>
+                                    <li className=" hover:bg-slate-200">
+                                        <Link
+
+                                            class="px-8 py-4 font-medium tracking-wide text-slate-800 transition-colors duration-200 hover:text-yellow-400"
+                                        >
+                                            Reading
+                                        </Link>
+                                    </li>
+                                    <li className=" hover:bg-slate-200">
+                                        <Link
+
+                                            class="px-8 py-4 font-medium tracking-wide text-slate-800 transition-colors duration-200 hover:text-yellow-400"
+                                        >
+                                            Podcast
+                                        </Link>
+                                    </li>
+                                </ul>
+                            </li>
+
                         </ul>
 
                     </div>
+
+
+
+
+
+                    {/*  */}
                     <ul class="flex items-center hidden space-x-8 lg:flex">
                         <li>
                             <Link to="#">
@@ -162,6 +206,42 @@ export const Nav = () => {
                                                     </li>
                                                 ))
                                             }
+                                            <li className="group relative " onClick={() => setIsOpen(!isOpen)}>
+                                                <Link
+
+                                                    class=" font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-yellow-400"
+                                                >
+                                                    News
+                                                </Link>
+
+
+                                                <ul className={`group-hover:block hidden absolute top-[100%] left-0 z-[999999] bg-white  border space-y-3 py-4 rounded-md ${isOpen ? 'block' : 'hidden'}`}>
+                                                    <li className=" hover:bg-slate-200">
+                                                        <Link
+
+                                                            class="px-8 py-4 font-medium tracking-wide text-slate-800 transition-colors duration-200 hover:text-yellow-400"
+                                                        >
+                                                            News
+                                                        </Link>
+                                                    </li>
+                                                    <li className=" hover:bg-slate-200">
+                                                        <Link
+
+                                                            class="px-8 py-4 font-medium tracking-wide text-slate-800 transition-colors duration-200 hover:text-yellow-400"
+                                                        >
+                                                            Reading
+                                                        </Link>
+                                                    </li>
+                                                    <li className=" hover:bg-slate-200">
+                                                        <Link
+
+                                                            class="px-8 py-4 font-medium tracking-wide text-slate-800 transition-colors duration-200 hover:text-yellow-400"
+                                                        >
+                                                            Podcast
+                                                        </Link>
+                                                    </li>
+                                                </ul>
+                                            </li>
                                         </ul>
                                         <ul class="flex items-center mt-6  space-x-8 lg:flex">
                                             <li>
